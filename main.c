@@ -49,7 +49,7 @@ void Display(Process table[]) {
         return;
     }
 
-    4for (int i = 0; i < count; i++) {
+    for (int i = 0; i < count; i++) {
         printf("\nProcess-%d", i + 1);
         printf("\nPID=%d\tName=%s\tPriority=%d\tBT=%.2f\n",
                table[i].id,
@@ -58,6 +58,7 @@ void Display(Process table[]) {
                table[i].BT);
     }
 }
+
 void BubbleSortByPid(Process table[]) {
     Process temp;
 
@@ -73,6 +74,7 @@ void BubbleSortByPid(Process table[]) {
 
     printf("Sorted by PID using Bubble Sort.\n");
 }
+
 void InsertionSortByBT(Process table[]) {
     Process key;
     int j;
@@ -91,6 +93,7 @@ void InsertionSortByBT(Process table[]) {
 
     printf("Sorted by BT using Insertion Sort.\n");
 }
+
 void ShellSortByPid(Process table[]) {
     Process temp;
 
@@ -109,6 +112,7 @@ void ShellSortByPid(Process table[]) {
 
     printf("Sorted by PID using Shell Sort.\n");
 }
+
 void LinearSearchByPid(Process table[]) {
     if (count == 0) {
         printf("No processes available.\n");
@@ -133,6 +137,7 @@ void LinearSearchByPid(Process table[]) {
     if (!found)
         printf("Process not found.\n");
 }
+
 void BinarySearchByPid(Process table[]) {
     if (count == 0) {
         printf("No processes available.\n");
